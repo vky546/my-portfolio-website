@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3069f1fa1d.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id ="sidemenu" >
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav><div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi, I'm <span>Vikkey</span> <br>Barpete from India</h1>
+            </div>
+        </div>
+    </div>
+
+     <!-- --------about ---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2nd img.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Experienced Java developer with a demonstrated history of working in the information technology and
+                         services industry. Skilled in Java, SpringBoot, Rest Apis, Mysql. Strong engineering professional
+                          with a BTech - Bachelor of Technology focused in 
+                        Computer Science from Acropolis Institute of Technology and Research, Manglia Chouraha, Indore. </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, Python, C++, HTML/CSS, SQL</li>
+                            <li><span>Developer Tools</span><br>VS Code, Eclipse, MySql Workbench</li>
+                            <li><span>Technologies/Frameworks</span><br>SpringBoot, SpringMVC, Git, Maven, Swagger</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>Dec 2021 - Sep 2022</span><br>Associate Software Engineer(java) at Xoriant Solutions</li>
+                            <li><span>March 2021 - June 2021</span><br>Graduate Engineer Intern at Systematix Infotech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>2017 - 2021</span><br>BTech in Computer Science and Engineering from Acropolis Institute of Technology and Research Indore</li>
+                            <li><span>2015 - 2016</span><br>Higher Secondary Education: 12th PCM from Vinayakam Hr. Sec. School</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Projects---------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Blogging app api</h3>
+                        <p>Created and tested functional REST APIs using Java and SpringBoot to perform the common function of using a
+                            Blogging application.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div> 
+
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Created and tested functional REST APIs using Java and SpringBoot to perform the common function of using a
+                            Blogging application.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div> 
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>Created and tested functional REST APIs using Java and SpringBoot to perform the common function of using a
+                            Blogging application.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+    </div>
+    <!-- -------------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vikkeybarpete546@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+917247296997</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/vikkey.barpete.33"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vikkeybarpete/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vikkey-barpete-304158173/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/Vikkey_Barpete_Resume .pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">  
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder=" Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type = "submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 . Made with <i class="fa-solid fa-heart"></i> by Vikkey Barpete</p>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>  
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwnDOMVSi5FoGLF0TcrXoilFsEC6EOjhkHPF2fdNU9uZ17MW7xJBcPbMVRKI5qMs3CM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
